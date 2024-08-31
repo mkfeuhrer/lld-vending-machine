@@ -1,0 +1,31 @@
+## Notes
+
+### Clarify requirements
+
+- Multiple product support (dynamic price and quantity)
+- Accept coins and notes of dynamic denomination
+- Return change after product is bought
+- Track products and quantities
+- Handle multiple transactions (concurrency)
+- Refill the supply
+- Collect money
+- Handle error cases like insufficient funds, out of stock
+
+Questions:
+
+- Do we need to manage change? If coins/notes are available?
+- Do we need to maintain purchase history?
+
+### Break down into Entities
+
+- Product
+- Payment
+- PaymentType
+  - Coin
+  - Notes
+  - Credit card (extensible)
+- Orders
+  - Order state (to handle concurrency)
+- Inventory
+- VendingMachine
+  - orchestrator
