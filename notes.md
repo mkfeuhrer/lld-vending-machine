@@ -37,3 +37,8 @@ Questions:
 ### Design classes
 
 - Create object and basic structure for entities
+
+### Implementation
+- make app working first 
+- then think about concurrency handling and other edge cases
+- app doesn't support multiple notes and coins. need to add that capability

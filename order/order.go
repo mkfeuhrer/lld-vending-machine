@@ -1,6 +1,7 @@
 package order
 
 import (
+	"time"
 	"vendingmachine/order/enums"
 	"vendingmachine/payment"
 	"vendingmachine/product"
@@ -13,6 +14,7 @@ type Order struct {
 	Products    []product.Product
 	Payment     *payment.Payment
 	OrderStatus enums.OrderStatus
+	CreatedAt   time.Time
 }
 
 func NewOrder(id string, products []product.Product, payment *payment.Payment) *Order {
@@ -21,5 +23,6 @@ func NewOrder(id string, products []product.Product, payment *payment.Payment) *
 		Products:    products,
 		Payment:     payment,
 		OrderStatus: enums.Initiated,
+		CreatedAt:   time.Now().UTC(),
 	}
 }

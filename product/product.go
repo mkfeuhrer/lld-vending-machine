@@ -4,11 +4,11 @@ package product
 type Product struct {
 	ID       string
 	Name     string
-	Price    float64
+	Price    int
 	Quantity int
 }
 
-func NewProduct(id, name string, price float64, quantity int) *Product {
+func NewProduct(id, name string, price int, quantity int) *Product {
 	return &Product{
 		ID:       id,
 		Name:     name,
