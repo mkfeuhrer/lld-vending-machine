@@ -14,7 +14,11 @@
 Questions:
 
 - Do we need to manage change? If coins/notes are available?
+  - No
 - Do we need to maintain purchase history?
+  - Yes and active balances
+- Multiple product support in one transaction?
+  - Yes
 
 ### Break down into Entities
 
@@ -29,3 +33,7 @@ Questions:
 - Inventory
 - VendingMachine
   - orchestrator
+
+### Design classes
+
+- Create object and basic structure for entities
