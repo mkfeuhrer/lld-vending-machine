@@ -41,4 +41,8 @@ Questions:
 ### Implementation
 - make app working first 
 - then think about concurrency handling and other edge cases
-- app doesn't support multiple notes and coins. need to add that capability
+
+### Todos
+- app doesn't support multiple notes and coins denominations. need to add that capability
+- app doesn't support returning change to user
+- add concurrency support
